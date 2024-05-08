@@ -17,9 +17,9 @@
         <header>
             <img src="./img/2641594.webp" alt="">
         </header>
-        <div class="container ">
+        <div class="container-fluid ">
             <ul class="row">
-                <li class="col-4 list-unstyled p-5" v-for="disk in disks">
+                <li class="col-4 list-unstyled p-5 m-0" v-for="disk in disks">
                     <div class="card h-100 bg-color-card p-3">
                         <img style="width: 100%;" :src="disk.poster" alt="">
                         <img src="" alt="">

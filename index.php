@@ -11,8 +11,11 @@
 <div id="app">
     {{ message }}
     <ul>
-        <li>
-            
+        <li v-for="disk in disks">
+            {{disk.title}} 
+            <p>
+            {{disk.author}}
+            </p>
         </li>
     </ul>
 </div>

@@ -1,7 +1,7 @@
 <?php
 
 
-$disc = [
+$disks = [
     [
         "title" => "New Jersey",
         "author" => "Bon Jovi",
@@ -30,9 +30,4 @@ $disc = [
 
 header('Content-type: application/json');
 
-$response = [
-    'results' => $disc,
-    'sucses' => true
-];
-
-echo json_encode($response);
+echo json_encode($disks);

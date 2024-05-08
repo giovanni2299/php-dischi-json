@@ -1,32 +1,8 @@
 <?php
 
+$data_dischi_json = file_get_contents('dischi.json');
 
-$disks = [
-    [
-        "title" => "New Jersey",
-        "author" => "Bon Jovi",
-    ],
-    [
-        "title" => "Live at Wembley 86",
-        "author" => "Queen",
-    ],
-    [
-        "title" => "Ten\"s Summoner\"s Tales",
-        "author" => "Sting",
-    ],
-    [
-        "title" => "Steve Gadd band",
-        "author" => "Steve Gadd Band",
-    ],
-    [
-        "title" => "Brave new World",
-        "author" => "Iron Maiden",
-    ],
-    [
-        "title" => "One more car, one more rider",
-        "author" => "Eric Clapton",
-    ]
-];
+$disks = json_decode($data_dischi_json, true);
 
 header('Content-type: application/json');
 
